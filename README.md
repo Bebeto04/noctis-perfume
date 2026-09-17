@@ -7,15 +7,40 @@ produto. Sem Three.js, WebGL ou modelos 3D: tudo é camada 2D, transform, másca
 
 **Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · GSAP 3.15 (ScrollTrigger, CustomEase, SplitText, EasePack)
 
-## Rodar
+---
+
+## ▶ Como baixar e rodar o site em outro computador (sem terminal, Windows)
+
+> Este repositório é o **código do site**. Para ver o site funcionando, é preciso **baixar** a pasta
+> e **rodar** no computador. São 3 passos, só com cliques:
+
+**1. Baixar o projeto**
+- **GitHub Desktop** (recomendado): *File → Clone repository* → escolha `noctis-perfume` → **Clone**.
+  Para receber atualizações depois, clique em **Fetch origin / Pull origin**.
+- **Ou pelo site do GitHub:** botão verde **Code → Download ZIP** e extraia a pasta.
+
+**2. Instalar o Node.js (só uma vez por computador)**
+- Baixe a versão **LTS** em <https://nodejs.org/pt-br/download> e instale clicando em *Avançar*.
+
+**3. Rodar**
+- Abra a pasta do projeto e dê **dois cliques em `iniciar-site.bat`**.
+- Na primeira vez ele instala o que precisa (alguns minutos); depois o navegador abre sozinho em
+  **http://localhost:3000**.
+- **Deixe a janela preta aberta** enquanto usa o site. Para desligar, é só fechá-la.
+
+Se o Node.js não estiver instalado, o próprio `iniciar-site.bat` avisa e abre a página de download.
+
+---
+
+## Rodar pelo terminal (desenvolvimento)
 
 ```bash
 npm install
-npm run dev            # http://localhost:3000
+npm run dev            # http://localhost:3000, recarrega ao editar
 npm run build && npm start
 ```
 
-Na raiz `roblox/.claude/launch.json` existem as configurações `noctis` (dev, porta 3220) e `noctis-prod` (porta 3221).
+Requer Node.js 20.9 ou mais novo.
 
 ## Estrutura
 

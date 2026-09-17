@@ -1,0 +1,22 @@
+NOCTIS - COMO RODAR O SITE NESTE COMPUTADOR
+===========================================
+
+Esta pasta e o CODIGO do site. Para ver o site funcionando e preciso
+roda-lo no computador. Sao 2 passos:
+
+1) INSTALAR O NODE.JS (so uma vez por computador)
+   - Acesse https://nodejs.org/pt-br/download
+   - Baixe a versao LTS e instale clicando em "Avancar".
+
+2) DAR DOIS CLIQUES EM:  iniciar-site.bat
+   - Na primeira vez ele instala o que precisa (alguns minutos).
+   - Depois o navegador abre sozinho em http://localhost:3000
+   - DEIXE A JANELA PRETA ABERTA enquanto usa o site.
+   - Para desligar, feche a janela preta.
+
+Para receber atualizacoes (se baixou pelo GitHub Desktop):
+   abra o GitHub Desktop e clique em "Fetch origin" / "Pull origin",
+   depois rode o iniciar-site.bat de novo.
+
+Se o Node.js nao estiver instalado, o iniciar-site.bat avisa e
+abre a pagina de download.
