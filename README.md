@@ -1,11 +1,83 @@
-# NOCTIS — campanha digital
+<div align="center">
 
-Site-portfólio de uma casa de perfumes fictícia. Uma única narrativa controlada pelo scroll em que o
-frasco NOCTIS I, montado a partir de seis renders independentes, atravessa a página inteira: abre as
-notas, recebe o mergulho da câmera no líquido, se desmonta em vista explodida, se remonta e pousa no
-produto. Sem Three.js, WebGL ou modelos 3D: tudo é camada 2D, transform, máscara e luz falsa.
+# NOCTIS
 
-**Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · GSAP 3.15 (ScrollTrigger, CustomEase, SplitText, EasePack)
+**Campanha digital de um perfume, controlada pelo scroll.**
+Um único frasco atravessa a página inteira: abre as notas, mergulha no líquido,
+se desmonta em vista explodida, se remonta e pousa no produto — **sem 3D**.
+
+<!-- LINK-AO-VIVO -->
+
+![Narrativa do NOCTIS em scroll](docs/noctis-scroll.gif)
+
+</div>
+
+---
+
+## O desafio
+
+O material de partida eram **seis imagens soltas** do frasco — tampa, atomizador, gola, corpo de vidro,
+líquido e placa — geradas separadamente, com enquadramentos, escalas e áreas transparentes diferentes.
+Não existia nenhuma imagem do **frasco montado** para servir de referência.
+
+O pedido era um site que parecesse campanha de marca de luxo, com o perfume como personagem principal,
+e uma restrição dura: **nada de Three.js, WebGL ou modelos 3D**. Toda a profundidade teria que vir de
+camadas 2D, transform, máscara e luz falsa.
+
+## A solução
+
+**1. Montar o frasco por medição, não por tentativa.**
+Como não havia render do conjunto, as proporções foram extraídas da vista explodida de referência
+(largura do gargalo, do flange, da gola e da tampa) e os encaixes calculados a partir do perfil de
+transparência de cada PNG. Duas descobertas definiram o resultado: o corpo tem uma **janela
+transparente** (o líquido precisa ficar atrás do vidro) e a tampa foi renderizada **vista de baixo**,
+o que a fazia flutuar — corrigido com um deslocamento medido de 45 unidades.
+
+A calibração final vive em **um único arquivo** (`src/config/perfumeAssemblyConfig.ts`): posição,
+escala, rotação, z-index e origem de cada peça. O mesmo arquivo alimenta o site e um script que
+recompõe o frasco com `sharp`, o que permitiu validar o alinhamento **por diferença de pixels**
+entre o CSS e o render de referência.
+
+**2. Uma timeline só.**
+A história inteira é uma linha do tempo GSAP com `scrub`, medida em "vh de scroll". O frasco nunca é
+duplicado: é o mesmo objeto que se move, escala, passa atrás e na frente da tipografia, se desmonta e
+se remonta. Clone existe só no voo do "Adicionar à sacola".
+
+**3. Profundidade sem 3D.**
+A cena é um único contexto de empilhamento com ordem fixa: halo, superfície, palavras atrás, glifos,
+**frasco**, texto na frente, anotações, interior âmbar, reveal. Palavras gigantes existem em duas
+cópias — a da frente recortada no eixo do frasco —, então a palavra some atrás do vidro de um lado e
+passa por cima dele do outro.
+
+## Resultado
+
+| | |
+|---|---|
+| **Desempenho** | mediana de 13 ms por quadro; pior quadro de 13,7 ms na maior parte da narrativa |
+| **Qualidade** | 28 verificações automatizadas em navegador headless, sem erros de console |
+| **Acessibilidade** | versão estática completa para `prefers-reduced-motion`, navegação por teclado, foco visível, nada dependente de hover |
+| **Peso** | 231 KB de JS (gzip) e 1 MB de imagens para a experiência inteira |
+
+---
+
+## A narrativa
+
+| | |
+|---|---|
+| ![Hero](docs/hero.webp) | ![A Abertura](docs/abertura.webp) |
+| **Hero** — o nome atrás do frasco, com o "C" escondido pelo vidro | **A Abertura** — notas de saída; os glifos saem de trás do frasco |
+| ![O Coração](docs/coracao.webp) | ![Vista explodida](docs/explodido.webp) |
+| **O Coração** — a câmera entra no líquido e o mundo vira âmbar | **Anatomia** — seis peças separadas, com anotações editoriais |
+| ![Palavras](docs/palavras.webp) | ![Produto](docs/produto.webp) |
+| **Quem é NOCTIS** — a palavra atravessa o frasco | **O Frasco** — pouso, preço e sacola funcionando |
+
+<div align="center">
+
+<img src="docs/mobile-hero.webp" width="240" alt="Hero no celular"> <img src="docs/mobile-explodido.webp" width="240" alt="Vista explodida no celular"> <img src="docs/mobile-produto.webp" width="240" alt="Produto no celular">
+
+*No celular a composição é própria, não uma versão encolhida do desktop.*
+
+</div>
 
 ---
 
@@ -30,8 +102,6 @@ produto. Sem Three.js, WebGL ou modelos 3D: tudo é camada 2D, transform, másca
 
 Se o Node.js não estiver instalado, o próprio `iniciar-site.bat` avisa e abre a página de download.
 
----
-
 ## Rodar pelo terminal (desenvolvimento)
 
 ```bash
@@ -41,6 +111,10 @@ npm run build && npm start
 ```
 
 Requer Node.js 20.9 ou mais novo.
+
+**Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · GSAP 3.15 (ScrollTrigger, CustomEase, SplitText, EasePack)
+
+---
 
 ## Estrutura
 
@@ -66,26 +140,25 @@ scripts/
   process-assets.mjs     recorta os PNGs-fonte pelo alfa e gera WebP + manifesto
   compose-assembly.mts   renderiza o frasco a partir do config (gabarito e noctis-full.webp)
   make-textures.mjs      grão e seda âmbar (sintéticos)
-  qa-shoot.mjs / qa-sheet.mjs / qa-interactions.mjs / qa-perf.mjs   QA em Edge headless
-assets/source/           renders originais anexados (raw) e recortados (trimmed) — fora de /public
+  make-showcase.mjs      imagens e GIF deste README
+  record-reel.mjs        vídeo vertical da narrativa
+  qa-shoot / qa-sheet / qa-interactions / qa-perf / qa-verdict   QA em navegador headless
+assets/source/           renders originais (raw) e recortados (trimmed, gerado) — fora de /public
+docs/                    imagens, GIF e vídeo de divulgação
 ```
 
 ## Os assets
 
-Os anexos foram classificados visualmente (duplicatas eliminadas por hash) e organizados em
-`public/images/noctis/`: `noctis-cap`, `-atomizer`, `-collar`, `-body`, `-liquid`, `-label`,
-`-exploded-reference` (só no debug) e `noctis-full` (composto a partir do config).
-O corpo de vidro tem uma janela transparente: o líquido fica **atrás** dele e aparece por ela.
-
-Não havia render do perfume montado. A escala relativa das peças foi medida na vista explodida de
-referência (largura do gargalo, flange, gola, tampa) e os encaixes calculados pelos perfis de alfa de
-cada PNG — ver comentários em `perfumeAssemblyConfig.ts`.
+Os anexos originais foram classificados visualmente (duplicatas eliminadas por hash) e organizados em
+`public/images/noctis/`. Cada arquivo carrega sua **procedência** registrada ao lado (origem ou prompt
+de geração). A textura do reveal e o grão são **sintéticos**, gerados por código em
+`scripts/make-textures.mjs`.
 
 ## Calibrar o frasco
 
 1. `npm run dev` e abra `/?debugPerfume=true` (não existe em produção).
 2. O painel mostra caixas, centros, z-index, posição e escala de cada camada, com sobreposição do
-   render de referência (opacidade ajustável) e alternância montado / explodido / compacto.
+   render de referência e alternância montado / explodido / compacto.
 3. Edite `src/config/perfumeAssemblyConfig.ts`. Para regenerar o gabarito:
    `node scripts/compose-assembly.mts --out ref.png` (ou `--exploded --debug`) e `--full` para `noctis-full.webp`.
 
@@ -95,27 +168,18 @@ Tudo é **uma** timeline com scrub (`buildTimeline.ts`); a unidade é "vh de scr
 é mudar um intervalo em `STORY`; mudar enquadramento é editar `POSES[desktop|tablet|mobile]`.
 Layouts: desktop ≥ 1024px, tablet 700–1023px, mobile < 700px (mesmos limites no CSS).
 
-Profundidade sem 3D: a cena é um único contexto de empilhamento — halo (1), dobra (1), superfície (2),
-palavras atrás (10), glifos (11), **frasco (20)**, texto na frente (30), anotações (32), fólio (33),
-interior âmbar (40), reveal (41). Palavras "divididas" existem em duas cópias; a da frente é recortada
-no eixo do frasco.
-
-## Acessibilidade e movimento
-
-- `prefers-reduced-motion`: renderiza `ReducedStory` (sem timeline, sem preloader, todo o conteúdo e a sacola funcionando).
-- Nenhuma interação depende só de hover: notas e peças respondem a foco e toque; no toque a peça em foco segue o scroll; o reveal segue o dedo.
-- Skip link, foco visível, gaveta e menu em `<dialog>` nativo (foco preso, Esc, retorno do foco).
-
 ## QA
 
 ```bash
+node scripts/qa-interactions.mjs out/int http://localhost:3221/   # 28 verificações
 node scripts/qa-shoot.mjs out/1440 1440x900 http://localhost:3221/
-node scripts/qa-sheet.mjs out/1440 out/1440-sheet.png
-node scripts/qa-interactions.mjs out/int http://localhost:3221/   # 23 verificações
 node scripts/qa-perf.mjs http://localhost:3221/ 1440x900
 ```
 
-## Pendências do dono da marca
+## Sobre a marca
 
-A marca é fictícia. Links de Instagram/Journal/Stores/Contact são `#`, o checkout é demonstrativo e a
-textura do reveal é sintética — substitua por fotografia real quando existir.
+NOCTIS é uma **casa fictícia**, criada como peça de portfólio. Links sociais são `#`, o checkout é
+demonstrativo e as imagens do frasco vieram de geração por IA — para um cliente real, seriam
+substituídas por fotografia do produto. O sistema aceita a troca sem reescrever a narrativa.
+
+Documentação de design: [`DESIGN.md`](DESIGN.md) · Contexto de produto: [`PRODUCT.md`](PRODUCT.md)
