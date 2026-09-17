@@ -6,7 +6,9 @@
 Um único frasco atravessa a página inteira: abre as notas, mergulha no líquido,
 se desmonta em vista explodida, se remonta e pousa no produto — **sem 3D**.
 
-<!-- LINK-AO-VIVO -->
+### 🔗 [Ver o site ao vivo](https://noctis-perfume.vercel.app)
+
+[![Ver o site ao vivo](https://img.shields.io/badge/Ver_o_site_ao_vivo-noctis--perfume.vercel.app-A96418?style=for-the-badge)](https://noctis-perfume.vercel.app)
 
 ![Narrativa do NOCTIS em scroll](docs/noctis-scroll.gif)
 
