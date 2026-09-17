@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-17T08:05:02.557Z",
+  "title": "Design System: NOCTIS",
+  "extensions": {
+    "colorMeta": {
+      "gold": {
+        "role": "primary",
+        "displayName": "Brushed Gold",
+        "canonical": "oklch(71.4% 0.102 76.6)",
+        "tonalRamp": [
+          "#130900",
+          "#342100",
+          "#593b00",
+          "#825803",
+          "#a57933",
+          "#c99c57",
+          "#efc17b",
+          "#feecd1"
+        ]
+      },
+      "gold-soft": {
+        "role": "primary",
+        "displayName": "Pale Gilt",
+        "canonical": "oklch(80.2% 0.072 77.0)",
+        "tonalRamp": [
+          "#130900",
+          "#332102",
+          "#573c0b",
+          "#785c2f",
+          "#9b7d50",
+          "#bfa071",
+          "#e4c494",
+          "#feecd1"
+        ]
+      },
+      "amber": {
+        "role": "secondary",
+        "displayName": "Lamp Amber",
+        "canonical": "oklch(56.9% 0.122 61.9)",
+        "tonalRamp": [
+          "#150700",
+          "#391d01",
+          "#613603",
+          "#8d5009",
+          "#b56f28",
+          "#db924e",
+          "#fdb97d",
+          "#ffead9"
+        ]
+      },
+      "amber-deep": {
+        "role": "secondary",
+        "displayName": "Burnt Resin",
+        "canonical": "oklch(35.5% 0.078 55.5)",
+        "tonalRamp": [
+          "#160700",
+          "#3c1b01",
+          "#613513",
+          "#835533",
+          "#a77654",
+          "#cc9875",
+          "#f2bc98",
+          "#ffeadc"
+        ]
+      },
+      "ink-0": {
+        "role": "neutral",
+        "displayName": "Night Stock",
+        "canonical": "oklch(13.0% 0.004 69.8)",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#262523",
+          "#434240",
+          "#62615f",
+          "#848280",
+          "#a6a5a3",
+          "#cbc9c7",
+          "#f0eeec"
+        ]
+      },
+      "ink-1": {
+        "role": "neutral",
+        "displayName": "Umber Stock",
+        "canonical": "oklch(16.3% 0.009 58.9)",
+        "tonalRamp": [
+          "#0e0a08",
+          "#292421",
+          "#46413d",
+          "#65605c",
+          "#87817d",
+          "#aaa49f",
+          "#cec8c3",
+          "#f3ede8"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Warm Shadow",
+        "canonical": "oklch(19.1% 0.017 53.5)",
+        "tonalRamp": [
+          "#110905",
+          "#2c231e",
+          "#49403a",
+          "#695f59",
+          "#8b8079",
+          "#aea29c",
+          "#d2c6bf",
+          "#f8ece4"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Scorched Edge",
+        "canonical": "oklch(24.4% 0.026 55.8)",
+        "tonalRamp": [
+          "#130802",
+          "#2f2219",
+          "#4d3f35",
+          "#6d5e53",
+          "#8f7f74",
+          "#b3a196",
+          "#d7c5b9",
+          "#fdeade"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Pressed Cream",
+        "canonical": "oklch(90.3% 0.024 73.6)",
+        "tonalRamp": [
+          "#110902",
+          "#2c2318",
+          "#4a4034",
+          "#6a5f52",
+          "#8b8073",
+          "#aea395",
+          "#d3c7b8",
+          "#f9ecdd"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Cream Ink",
+        "canonical": "oklch(94.6% 0.013 71.3)",
+        "tonalRamp": [
+          "#0f0a06",
+          "#29241e",
+          "#47413b",
+          "#666059",
+          "#87817a",
+          "#aaa49c",
+          "#cfc8c0",
+          "#f4ede5"
+        ]
+      },
+      "text-dim": {
+        "role": "neutral",
+        "displayName": "Dim Ink",
+        "canonical": "oklch(74.5% 0.030 74.2)",
+        "tonalRamp": [
+          "#130900",
+          "#2e2314",
+          "#4c4030",
+          "#6c5f4f",
+          "#8d806f",
+          "#b1a391",
+          "#d5c7b4",
+          "#fbecd9"
+        ]
+      },
+      "text-faint": {
+        "role": "neutral",
+        "displayName": "Faint Ink",
+        "canonical": "oklch(60.7% 0.028 73.0)",
+        "tonalRamp": [
+          "#120901",
+          "#2e2315",
+          "#4b4031",
+          "#6b5f50",
+          "#8d8070",
+          "#b0a392",
+          "#d5c7b5",
+          "#fbecda"
+        ]
+      },
+      "lit-cream": {
+        "role": "neutral",
+        "displayName": "Lamplit Cream",
+        "canonical": "oklch(97.1% 0.024 77.5)",
+        "tonalRamp": [
+          "#110a02",
+          "#2c2418",
+          "#494134",
+          "#696052",
+          "#8b8172",
+          "#aea395",
+          "#d2c8b8",
+          "#f8eddd"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Gold Hairline",
+        "canonical": "rgb(199 154 85 / 0.28)",
+        "tonalRamp": [
+          "#130900",
+          "#342100",
+          "#593b00",
+          "#825803",
+          "#a57933",
+          "#c99c57",
+          "#efc17b",
+          "#feecd1"
+        ]
+      },
+      "hairline-faint": {
+        "role": "neutral",
+        "displayName": "Faint Gold Hairline",
+        "canonical": "rgb(199 154 85 / 0.14)",
+        "tonalRamp": [
+          "#130900",
+          "#342100",
+          "#593b00",
+          "#825803",
+          "#a57933",
+          "#c99c57",
+          "#efc17b",
+          "#feecd1"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "masthead": {
+        "displayName": "Masthead",
+        "purpose": "NOCTIS wordmark behind the bottle and ghosted in the footer; automatic optical sizing gives maximum hairline contrast."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Chapter titles and product name; personality words run larger in alternating roman cream and italic gold."
+      },
+      "display-heart": {
+        "displayName": "Display Heart",
+        "purpose": "Heart-note names over the bright amber liquid; optical sizing off, opsz pinned at 22 so hairlines survive."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Secondary chapter headings."
+      },
+      "lede-italic": {
+        "displayName": "Lede Italic",
+        "purpose": "Quiet asides set in italic: family line, footer sign-off, reveal whispers."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Annotation part names, uppercase."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Descriptions, drawer notes, reduced-motion prose."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, nav links, spec and facet lines; uppercase."
+      },
+      "folio": {
+        "displayName": "Folio / Plate",
+        "purpose": "Running folio and PL. plate credits; uppercase, tabular numerals."
+      }
+    },
+    "shadows": [
+      {
+        "name": "contact",
+        "value": "radial-gradient(closest-side, rgb(0 0 0 / 0.55), rgb(0 0 0 / 0))",
+        "purpose": "Cap meeting the glass shoulder."
+      },
+      {
+        "name": "floor",
+        "value": "radial-gradient(closest-side, rgb(0 0 0 / 0.75), rgb(0 0 0 / 0))",
+        "purpose": "Under the bottle, breathing with the float."
+      },
+      {
+        "name": "flight",
+        "value": "drop-shadow(0 18px 30px rgb(0 0 0 / 0.5))",
+        "purpose": "Only on the add-to-bag bottle clone."
+      },
+      {
+        "name": "whisper-legibility",
+        "value": "0 2px 24px rgb(20 8 2 / 0.85)",
+        "purpose": "text-shadow for italic whispers over the silk texture."
+      }
+    ],
+    "motion": [
+      {
+        "name": "noctis.out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "GSAP CustomEase and --ease-out-strong. Arrivals, text reveals, state changes, hover rule retraction."
+      },
+      {
+        "name": "noctis.inOut",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "GSAP CustomEase and --ease-in-out-strong. Bottle travel between poses, disassembly and reassembly, leader draw-in, preloader wipe, sheen pass."
+      },
+      {
+        "name": "ease-drawer",
+        "value": "cubic-bezier(0.32, 0.72, 0, 1)",
+        "purpose": "Bag drawer slide: 460ms open, 280ms close."
+      },
+      {
+        "name": "ease-breath",
+        "value": "cubic-bezier(0.37, 0, 0.63, 1)",
+        "purpose": "Idle float of the bottle and floor shadow, 7.5s alternate."
+      },
+      {
+        "name": "exit",
+        "value": "power1.in",
+        "purpose": "Text and glyph exits on the scrub timeline."
+      },
+      {
+        "name": "scrub-timeline",
+        "value": "ScrollTrigger scrub 0.6; default ease none; 1 unit = 1vh of scroll; length 1780 inside an 1880vh story",
+        "purpose": "Single story timeline; ranges live in storyConfig STORY, bottle poses per layout in POSES."
+      },
+      {
+        "name": "pointer-tilt",
+        "value": "quickTo 0.9s power3.out; max 2.5deg; depth cap 1.6, label 1.35, atomizer 1.2, collar 1.1, body 0.4, liquid 0",
+        "purpose": "Fine-pointer tilt and per-layer parallax of the bottle."
+      },
+      {
+        "name": "state-durations",
+        "value": "240ms colour; 320-460ms notes and menu; 420ms line-button rule",
+        "purpose": "Interface state changes outside the scrub."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "static linear reading",
+        "purpose": "Scrub stage not mounted; ReducedStory renders all content and actions; no preloader or bag flight; drawer and menu fade 200ms; feedback by colour only; idle animations off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "0-699px"
+      },
+      {
+        "name": "tablet",
+        "value": "700px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Solid Button",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "Cream block for the one decisive action per context: Add to bag, checkout, menu CTA.",
+      "html": "<button class=\"ds-btn-solid\">Add to bag</button>",
+      "css": ".ds-btn-solid{--color-ink-0:#080706;--color-ink-1:#110d0a;--color-gold:#c79a55;--color-gold-soft:#d9b98a;--color-cream:#e9ddce;--color-text:#f3ece4;--color-text-dim:#b8aa98;--color-text-faint:#8d8070;--color-hairline:rgb(199 154 85 / 0.28);--ease-out-strong:cubic-bezier(0.23,1,0.32,1);--font-display:\"Bodoni Moda\",Didot,\"Times New Roman\",serif;--font-sans:\"Hanken Grotesk\",ui-sans-serif,system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 2.3rem;font-family:var(--font-sans);font-size:0.72rem;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--color-ink-0);background:var(--color-cream);border:0;border-radius:0;cursor:pointer;transition:background-color 240ms ease,transform 140ms var(--ease-out-strong)}.ds-btn-solid:hover{background:var(--color-gold-soft)}.ds-btn-solid:active{transform:scale(0.97)}.ds-btn-solid:focus-visible{outline:1px solid var(--color-gold);outline-offset:4px}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Caption on a hairline with a gold rule that retracts on hover; secondary moves like Discover the scent.",
+      "html": "<div class=\"ds-stage\"><a href=\"#\" class=\"ds-btn-line\">Discover the scent</a></div>",
+      "css": ".ds-stage{--color-ink-0:#080706;--color-ink-1:#110d0a;--color-gold:#c79a55;--color-gold-soft:#d9b98a;--color-cream:#e9ddce;--color-text:#f3ece4;--color-text-dim:#b8aa98;--color-text-faint:#8d8070;--color-hairline:rgb(199 154 85 / 0.28);--ease-out-strong:cubic-bezier(0.23,1,0.32,1);--font-display:\"Bodoni Moda\",Didot,\"Times New Roman\",serif;--font-sans:\"Hanken Grotesk\",ui-sans-serif,system-ui,sans-serif;background:#080706;padding:24px}.ds-btn-line{position:relative;display:inline-flex;align-items:center;min-height:44px;padding:0.25rem 0;font-family:var(--font-sans);font-size:0.72rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--color-text);text-decoration:none}.ds-btn-line::before,.ds-btn-line::after{content:\"\";position:absolute;left:0;right:0;bottom:8px;height:1px}.ds-btn-line::before{background:var(--color-hairline)}.ds-btn-line::after{background:var(--color-gold);transform-origin:right;transition:transform 420ms var(--ease-out-strong)}.ds-btn-line:hover::after{transform:scaleX(0.35)}.ds-btn-line:focus-visible{outline:1px solid var(--color-gold);outline-offset:4px}"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "nav-cta",
+      "description": "Didone wordmark, tracked caption links with a 3px gold dot for the current chapter, hairline-boxed CTA and stroke bag icon.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-logo\">NOCTIS</span><span class=\"ds-nav-links\"><a href=\"#\">Fragrance</a><a href=\"#\">Notes</a><a href=\"#\" aria-current=\"true\">Craft</a><a href=\"#\">Story</a></span><a href=\"#\" class=\"ds-nav-cta\">Discover NOCTIS</a><button class=\"ds-nav-bag\" aria-label=\"Bag\"><svg width=\"20\" height=\"22\" viewBox=\"0 0 20 22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" aria-hidden=\"true\"><path d=\"M3 7h14l-1 14H4L3 7z\"/><path d=\"M7 7V5a3 3 0 0 1 6 0v2\"/></svg><span>0</span></button></nav>",
+      "css": ".ds-nav{--color-ink-0:#080706;--color-ink-1:#110d0a;--color-gold:#c79a55;--color-gold-soft:#d9b98a;--color-cream:#e9ddce;--color-text:#f3ece4;--color-text-dim:#b8aa98;--color-text-faint:#8d8070;--color-hairline:rgb(199 154 85 / 0.28);--ease-out-strong:cubic-bezier(0.23,1,0.32,1);--font-display:\"Bodoni Moda\",Didot,\"Times New Roman\",serif;--font-sans:\"Hanken Grotesk\",ui-sans-serif,system-ui,sans-serif;display:flex;align-items:center;gap:2rem;padding:1.6rem 2rem;background:rgb(8 7 6 / 0.92);border-bottom:1px solid rgb(199 154 85 / 0.14)}.ds-nav-logo{font-family:var(--font-display);font-size:1.15rem;letter-spacing:0.34em;color:var(--color-text);margin-right:auto}.ds-nav-links{display:flex;gap:2.2rem}.ds-nav-links a,.ds-nav-cta{position:relative;font-family:var(--font-sans);font-size:0.68rem;font-weight:500;letter-spacing:0.26em;text-transform:uppercase;color:var(--color-text-dim);text-decoration:none;padding:0.6rem 0;transition:color 240ms ease}.ds-nav-links a:hover,.ds-nav-links a[aria-current]{color:var(--color-text)}.ds-nav-links a[aria-current]::after{content:\"\";position:absolute;left:50%;bottom:0;width:3px;height:3px;margin-left:-1.5px;border-radius:50%;background:var(--color-gold)}.ds-nav-cta{color:var(--color-text);padding:0.7rem 1.1rem;border:1px solid var(--color-hairline);transition:border-color 240ms ease,background-color 240ms ease}.ds-nav-cta:hover{border-color:var(--color-gold);background:rgb(199 154 85 / 0.08)}.ds-nav-bag{display:inline-flex;align-items:center;gap:0.45rem;min-width:44px;min-height:44px;background:none;border:0;color:var(--color-text);cursor:pointer}.ds-nav-bag span{font-family:var(--font-sans);font-size:0.7rem;font-variant-numeric:tabular-nums;color:var(--color-gold-soft)}.ds-nav a:focus-visible,.ds-nav-bag:focus-visible{outline:1px solid var(--color-gold);outline-offset:4px}"
+    },
+    {
+      "name": "Exploded-View Annotation",
+      "kind": "custom",
+      "refersTo": "annotation",
+      "description": "Anatomy plate caption: gold dot, elbowed 1px leader, registration cross, Didone title, description and plate credit.",
+      "html": "<div class=\"ds-ann\" tabindex=\"0\"><svg class=\"ds-ann-lines\" width=\"150\" height=\"80\" viewBox=\"0 0 150 80\" aria-hidden=\"true\"><circle cx=\"4\" cy=\"10\" r=\"2.5\"/><path class=\"ds-ann-leader\" d=\"M4 10 L92 10 L114 40\"/><path class=\"ds-ann-cross\" d=\"M108 40 h12 M114 34 v12\"/></svg><div class=\"ds-ann-text\"><span class=\"ds-ann-title\">Atomizer</span><span class=\"ds-ann-line\">Precision spray system.</span><span class=\"ds-ann-plate\">PL. 02</span></div></div>",
+      "css": ".ds-ann{--color-ink-0:#080706;--color-ink-1:#110d0a;--color-gold:#c79a55;--color-gold-soft:#d9b98a;--color-cream:#e9ddce;--color-text:#f3ece4;--color-text-dim:#b8aa98;--color-text-faint:#8d8070;--color-hairline:rgb(199 154 85 / 0.28);--ease-out-strong:cubic-bezier(0.23,1,0.32,1);--font-display:\"Bodoni Moda\",Didot,\"Times New Roman\",serif;--font-sans:\"Hanken Grotesk\",ui-sans-serif,system-ui,sans-serif;display:flex;align-items:flex-start;background:#080706;padding:24px}.ds-ann-lines{overflow:visible;margin-right:8px}.ds-ann-lines circle{fill:var(--color-gold)}.ds-ann-leader{fill:none;stroke:rgb(199 154 85 / 0.62);stroke-width:1}.ds-ann-cross{fill:none;stroke:var(--color-gold);stroke-width:1}.ds-ann-text{display:grid;gap:0.2rem;margin-top:28px}.ds-ann-title{font-family:var(--font-display);font-size:1.3rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-text);transition:color 280ms ease}.ds-ann:hover .ds-ann-title,.ds-ann:focus-visible .ds-ann-title{color:var(--color-gold-soft)}.ds-ann:focus-visible{outline:1px dashed rgb(199 154 85 / 0.7);outline-offset:2px}.ds-ann-line{font-family:var(--font-sans);font-size:0.82rem;color:var(--color-text-dim)}.ds-ann-plate{margin-top:0.3rem;font-family:var(--font-sans);font-size:0.58rem;letter-spacing:0.32em;text-transform:uppercase;color:var(--color-text-faint);font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Folio",
+      "kind": "custom",
+      "refersTo": "folio",
+      "description": "Running foot of the spread; chapter state is a mark in the folio, not a colour bar.",
+      "html": "<p class=\"ds-folio\"><span>NOCTIS I — Anatomy</span><span>p. 05</span></p>",
+      "css": ".ds-folio{--color-ink-0:#080706;--color-ink-1:#110d0a;--color-gold:#c79a55;--color-gold-soft:#d9b98a;--color-cream:#e9ddce;--color-text:#f3ece4;--color-text-dim:#b8aa98;--color-text-faint:#8d8070;--color-hairline:rgb(199 154 85 / 0.28);--ease-out-strong:cubic-bezier(0.23,1,0.32,1);--font-display:\"Bodoni Moda\",Didot,\"Times New Roman\",serif;--font-sans:\"Hanken Grotesk\",ui-sans-serif,system-ui,sans-serif;display:flex;justify-content:space-between;margin:0;padding:16px 24px;background:#080706;font-family:var(--font-sans);font-size:0.58rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--color-text-faint);font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Bag Drawer Line",
+      "kind": "custom",
+      "refersTo": "drawer",
+      "description": "Row inside the native-dialog bag drawer: hairline-separated, Didone name, square hairline quantity stepper, tabular price, full-width solid checkout.",
+      "html": "<div class=\"ds-drawer\"><div class=\"ds-dl\"><div class=\"ds-dl-thumb\"></div><div><div class=\"ds-dl-name\">NOCTIS I</div><div class=\"ds-dl-meta\">Eau de Parfum · 100 ML</div><div class=\"ds-qty\"><button aria-label=\"Decrease\">&minus;</button><output>1</output><button aria-label=\"Increase\">+</button></div></div><div class=\"ds-dl-price\">R$ 589</div></div><button class=\"ds-drawer-cta\">Checkout</button></div>",
+      "css": ".ds-drawer{--color-ink-0:#080706;--color-ink-1:#110d0a;--color-gold:#c79a55;--color-gold-soft:#d9b98a;--color-cream:#e9ddce;--color-text:#f3ece4;--color-text-dim:#b8aa98;--color-text-faint:#8d8070;--color-hairline:rgb(199 154 85 / 0.28);--ease-out-strong:cubic-bezier(0.23,1,0.32,1);--font-display:\"Bodoni Moda\",Didot,\"Times New Roman\",serif;--font-sans:\"Hanken Grotesk\",ui-sans-serif,system-ui,sans-serif;background:var(--color-ink-1);color:var(--color-text);padding:0 2rem 2rem;border-left:1px solid rgb(199 154 85 / 0.16);max-width:460px}.ds-dl{display:grid;grid-template-columns:72px 1fr auto;gap:1.2rem;padding:1.8rem 0;border-bottom:1px solid rgb(199 154 85 / 0.1);margin-bottom:1.6rem}.ds-dl-thumb{height:110px;background:radial-gradient(closest-side,rgb(169 100 24 / 0.22),transparent)}.ds-dl-name{font-family:var(--font-display);font-size:1.35rem;letter-spacing:0.04em}.ds-dl-meta{font-family:var(--font-sans);font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-text-faint);margin-top:0.2rem}.ds-qty{display:inline-flex;align-items:center;margin-top:1rem;border:1px solid var(--color-hairline)}.ds-qty button{display:grid;place-items:center;width:40px;height:40px;color:var(--color-text);background:none;border:0;cursor:pointer}.ds-qty button:hover{color:var(--color-gold-soft)}.ds-qty button:focus-visible{outline:1px solid var(--color-gold);outline-offset:-4px}.ds-qty output{min-width:2rem;text-align:center;font-variant-numeric:tabular-nums;font-family:var(--font-sans);font-size:0.9rem}.ds-dl-price{font-family:var(--font-sans);font-variant-numeric:tabular-nums}.ds-drawer-cta{width:100%;display:inline-flex;align-items:center;justify-content:center;min-height:52px;font-family:var(--font-sans);font-size:0.72rem;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--color-ink-0);background:var(--color-cream);border:0;cursor:pointer;transition:background-color 240ms ease}.ds-drawer-cta:hover{background:var(--color-gold-soft)}.ds-drawer-cta:focus-visible{outline:1px solid var(--color-gold);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Issue",
+    "overview": "NOCTIS is a fashion-magazine perfume advertorial printed on warm black stock and lit by a single amber source. Every chapter is a double-page spread; the bottle is the only object allowed to cross the centre fold. Type does the work that containers do elsewhere: a huge, tight Didone set as masthead and headline, and a small, widely tracked grotesk for captions, credits and controls. Nothing is boxed. Structure comes from hairline rules, plate credits, registration crosses and a running folio, the furniture of a printed page.\n\nDensity is low and deliberate: one idea per viewport, with generous black around it. Light is the only ornament. The amber halo, the pool on the product floor and the falloff inside the liquid are all the same light behaving physically, never a colour wash laid over the page. Motion is the page turning: one scrubbed timeline measured in viewport-heights of scroll, with two house curves.\n\nRejected, as brand commitments: glassmorphism, card grids and bento, purple or blue gradients, glow on everything, testimonial or \"trusted by\" template sections.",
+    "keyCharacteristics": [
+      "Warm black stock (ink-0 to ink-3) with one amber light and one metal, brushed gold.",
+      "Bodoni Moda with its optical-size axis, from 25rem masthead to 1.3rem plate titles; Hanken Grotesk for every caption and control.",
+      "Square corners everywhere; round only for points of light and shadow.",
+      "Print furniture instead of containers: hairlines, registration crosses, plate numbers, folio.",
+      "A single continuous object on a z-ordered stage; type sits behind and in front of it.",
+      "One GSAP scrub timeline (scrub 0.6) in vh-of-scroll units; a linear static reading for reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The One Light Rule",
+        "body": "Amber appears only as light: radial falloff that fades to transparent. It never fills a button, a block, text, or a flat background.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Metal Rule",
+        "body": "Gold is the only accent and there is no second metal or hue. In the interface it is hairline-weight: 1px rules, strokes, crosses, 3px dots. In type it appears only as the italic counter-voice of the giant personality words and as Pale Gilt active states.",
+        "section": "colors"
+      },
+      {
+        "name": "The Optical Size Rule",
+        "body": "Bodoni Moda runs with automatic optical sizing, so the masthead gets maximum hairline contrast and small titles get sturdier strokes. The single override is display text set over the bright amber liquid: optical sizing off, `opsz` 22, so the hairlines survive the glare at 17rem.",
+        "section": "typography"
+      },
+      {
+        "name": "The Caption Voice Rule",
+        "body": "Every non-display word is Hanken Grotesk, small, uppercase and tracked at least +0.16em, except running prose and prices. Numbers that count (price, quantity, page, percentage) are tabular.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Faces Rule",
+        "body": "Didone speaks, grotesk labels. Never set a control in Bodoni or a headline in Hanken.",
+        "section": "typography"
+      },
+      {
+        "name": "The Spread Rule",
+        "body": "Each chapter reads as one magazine spread: a single headline, one supporting line, the bottle. If a viewport needs two headlines, it is two chapters.",
+        "section": "layout"
+      },
+      {
+        "name": "The Object-Only Shadow Rule",
+        "body": "Shadows belong to the physical bottle (contact, floor, flight) and to type over photography. Interface elements never cast one.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep amber as radial light that fades to transparent (halo, floor pool, horizon, liquid falloff).",
+      "Do draw structure with 1px gold hairlines, registration crosses, plate credits and the folio.",
+      "Do keep every control and panel square (0px) and every touch target at least 44px.",
+      "Do set headlines in Bodoni Moda at 400 with tight leading (0.8 to 0.95) and captions in uppercase Hanken Grotesk tracked +0.16em or more.",
+      "Do pin `opsz` low (22) when giant Didone sits on a bright field.",
+      "Do move the bottle only on noctis.inOut and bring text in on noctis.out, with ranges in vh-of-scroll units kept in config.",
+      "Do ship a complete static reading for prefers-reduced-motion rather than a slowed-down animation.",
+      "Do use native `<dialog>` for the drawer and the menu sheet."
+    ],
+    "donts": [
+      "Don't use glassmorphism: no backdrop-filter blur panels or frosted bars. The glass is the bottle's, not the interface's.",
+      "Don't put content in cards, tiles or bento grids; separate with hairlines and space.",
+      "Don't use gradients as decoration: no colour-to-colour washes, gradient text, or gradient buttons, and never purple or blue.",
+      "Don't add glow to interface elements; light belongs to the scene.",
+      "Don't add a second accent colour or a second metal.",
+      "Don't show chapter state with a coloured bar or pill; use the folio and the 3px dot.",
+      "Don't cast shadows from UI; shadows belong to the physical bottle.",
+      "Don't duplicate the bottle on the page; the only clone is the transient add-to-bag flight."
+    ]
+  }
+}
